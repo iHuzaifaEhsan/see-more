@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See More Button</title>
+</head>
+<body>
+
+    <div id="visibleContent">
+
+        <p>This is the visible content.</p>
+    </div>
+
+    <div id="hiddenContent" style="display: none;">
+  
+        <p>This is the hidden content. It will be displayed when you click "See More".</p>
+    </div>
+
+    <a onclick="document.getElementById('hiddenContent').style.display = (document.getElementById('hiddenContent').style.display === 'none') ? 'block' : 'none';">
+        See More
+    </a>
+
+</body>
+</html>
